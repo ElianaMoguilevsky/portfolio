@@ -1,0 +1,53 @@
+<form action="#" method="post">
+    
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required minlength="3">
+    
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required minlength="3">
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required minlength="8">
+
+    <label for="fechaNac">Fecha de nacimiento:</label>
+    <input type="date" id="fechaNac" name="fechaNac" required>
+
+    <label for="pais">País:</label>
+    <select name="pais" id="pais">
+        <option value="Argentina">Argentina</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Chile">Chile</option>
+        <option value="Otro">Otro</option>
+    </select>
+    
+    <br>
+    
+    <br>
+    
+    <input type="checkbox" id="tyc" name="tyc" value="accepted" required>
+    <label for="tyc">Acepto los términos y condiciones</label><br>
+
+    <p>Selecciona tu género:</p>
+    
+    <input type="radio" id="genero_m" name="genero" value="Masculino">
+    <label for="genero_m">Masculino</label><br>
+    
+    <input type="radio" id="genero_f" name="genero" value="Femenino">
+    <label for="genero_f">Femenino</label><br>
+    
+    <input type="radio" id="genero_o" name="genero" value="Otro">
+    <label for="genero_o">Otro</label><br>
+    
+    <input type="radio" id="genero_nr" name="genero" value="Prefiero no responder">
+    <label for="genero_nr">Prefiero no responder</label>
+    
+    <section>
+        <button type="submit" id="btn-enviar">Enviar</button>
+    </section>
+
+
+
+</form>
