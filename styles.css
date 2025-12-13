@@ -1,0 +1,60 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Ahora aplicá estilos a tu header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+/* Continuá con el resto de elementos */
+
+section {
+padding: 2rem;
+margin-bottom: 1rem;
+border-bottom: 1px solid #787878;
+}
+
+#proyectos, #habilidades{
+    background-color: #2c3e50;
+    color: white;
+}
+
+footer{
+    background-color: #2c3e50;
+    color: white;
+}
+
+
+  nav a, #proyectos a   {
+    color: rgb(80, 217, 238); /* color por defecto */
+  }
+
+  nav a:visited,#proyectos a:visited {
+    color: rgb(80, 217, 238); /* cuando ya fue visitado */
+  }
+
+  nav a:hover, #proyectos a:hover   {
+    color: rgb(204, 0, 255); /* cuando pasás el mouse por encima */
+  }
+
+  nav a:active, #proyectos a:active {
+    color: white; /* cuando hacés clic */
+  }
+
+
+#proyectos article, h2 {
+    margin-bottom: 2rem;
+}
+
