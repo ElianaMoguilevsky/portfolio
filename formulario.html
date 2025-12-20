@@ -1,58 +1,83 @@
-<form action="#" method="post">
-    
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required minlength="3">
-    
-    <label for="apellido">Apellido:</label>
-    <input type="text" id="apellido" name="apellido" required minlength="3">
+<!DOCTYPE html>
+<html lang="es">
 
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" required>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="styles-form.css">
+</head>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required minlength="8">
+<body>
+    <main>
+        <h1>Registro de Usuario</h1>
+        <form action="#" method="post">
 
-    <label for="fechaNac">Fecha de nacimiento:</label>
-    <input type="date" id="fechaNac" name="fechaNac" required>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required minlength="3">
+            </div>
 
-    <label for="pais">País:</label>
-    <select name="pais" id="pais">
-        <option value="Argentina">Argentina</option>
-        <option value="Uruguay">Uruguay</option>
-        <option value="Chile">Chile</option>
-        <option value="Otro">Otro</option>
-    </select>
-    
-    <br>
-    
-    <br>
-    
-    <input type="checkbox" id="tyc" name="tyc" value="accepted" required>
-    <label for="tyc">Acepto los términos y condiciones</label><br>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required minlength="3">
+            </div>
 
-    
-    <fieldset>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8">
+            </div>
 
-    <legend>Selecciona tu género:</legend>
-    
-    <input type="radio" id="genero_m" name="genero" value="Masculino">
-    <label for="genero_m">Masculino</label><br>
-    
-    <input type="radio" id="genero_f" name="genero" value="Femenino">
-    <label for="genero_f">Femenino</label><br>
-    
-    <input type="radio" id="genero_o" name="genero" value="Otro">
-    <label for="genero_o">Otro</label><br>
-    
-    <input type="radio" id="genero_nr" name="genero" value="Prefiero no responder">
-    <label for="genero_nr">Prefiero no responder</label>
-    
-    </fieldset>
+            <div class="form-group">
+                <label for="fechaNac">Fecha de nacimiento:</label>
+                <input type="date" id="fechaNac" name="fechaNac" required>
+            </div>
+            
+            <div class="form-group">
+            <label for="pais">País:</label>
+            <select name="pais" id="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Chile">Chile</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </div>
 
-    <section>
-        <button type="submit" id="btn-enviar">Enviar</button>
-    </section>
-
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="tyc" name="tyc" value="accepted" required>
+                <label for="tyc">Acepto los términos y condiciones</label>
+            </div>
 
 
-</form>
+            <fieldset>
+
+                <legend>Selecciona tu género:</legend>
+
+                <input type="radio" id="genero_m" name="genero" value="Masculino">
+                <label for="genero_m">Masculino</label><br>
+
+                <input type="radio" id="genero_f" name="genero" value="Femenino">
+                <label for="genero_f">Femenino</label><br>
+
+                <input type="radio" id="genero_o" name="genero" value="Otro">
+                <label for="genero_o">Otro</label><br>
+
+                <input type="radio" id="genero_nr" name="genero" value="Prefiero no responder">
+                <label for="genero_nr">Prefiero no responder</label>
+
+            </fieldset>
+
+                <button type="submit" id="btn-enviar">Enviar</button>
+    
+        </form>
+
+    </main>
+</body>
+
+</html>
+
